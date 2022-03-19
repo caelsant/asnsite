@@ -11,4 +11,6 @@ app.get("/index", function(req, res){
 
 
 
-app.listen(2003);
+app.listen(9090, function(){
+    console.log("Rodando")
+});
