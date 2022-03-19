@@ -4,7 +4,23 @@
     --fontH1-Home: 20px;
     --colorPrincipal: #F59D0F;
     --colorSecundaria: #015A84;
-    --fontSections: 35px;
+    --fontSections: 1.3em;
+
+    /*Alturas*/
+    --fontGrande: 2.3em;
+    --fontMGrande: 1.7em;
+    --fontMedia: 1.5em;
+    --fontPequena: 1.0em;
+    --fontMinuscula: 0.8em;
+    --fontMINI: 0.5em;
+
+    /*HEIGHTS*/
+    --homeHeight: 240%;
+    --sobreHeight: 240%;
+    --produtosHeight: 400%;
+    --segmentosHeight: 100%;
+    --suportHeight: 70%;
+    --footerHeight: 40%;
 }
 
 
@@ -62,7 +78,7 @@ header h1{
 #logo h1{
     position: relative;
     float: left;
-    font-size: 25px;
+    font-size: var(--fontPequena);
     margin-left: 3%;
     top: 50%;
     transform: translateY(-50%);
@@ -90,7 +106,7 @@ header h1{
     transform: translateY(-50%);
     margin-left: 4%;
     left: 13%;
-    font-size: 18px;
+    font-size: var(--fontPequena);
     color: white;
     cursor: pointer;
 }
@@ -116,7 +132,7 @@ header h1{
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: var(--fontPequena);
     color: white;
     cursor: pointer;
 }
@@ -191,12 +207,12 @@ header h1{
 }
 
 #home-info h1{
-    font-size: 60px;
+    font-size: var(--fontGrande);
     color: var(--colorSecundaria);
 }
 
 #home-info p{
-    font-size: 30px;
+    font-size: var(--fontMedia);
     color: white;
 }
 
@@ -207,7 +223,7 @@ header h1{
     background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 0.8em;
     color: white;
     cursor: pointer;
 }
@@ -217,7 +233,7 @@ header h1{
 #sobre{
     position: relative;
     width: 100%;
-    height: 300%;
+    height: var(--sobreHeight);
     background-color: white;
     float: left;
     padding-bottom: 5%;
@@ -261,12 +277,12 @@ header h1{
 #sobre-info h1{
     width: 80%;
     color: #F59D0F;
-    font-size: 55px;
+    font-size: var(--fontGrande);
 }
 
 #sobre-info p{
     color: white;
-    font-size: 25px;
+    font-size: var(--fontPequena);
     width: 90%;
 }
 
@@ -327,7 +343,7 @@ header h1{
 .whyush1{
     color: #F59D0F;
     margin-bottom: 3%;
-    font-size: 35px;
+    font-size: var(--fontMedia);
     width: 60%;
 }
 
@@ -336,7 +352,7 @@ header h1{
     color: black;
     font-size: 18px;
     margin-bottom: 5%;
-    font-size: 24px;
+    font-size: var(--fontPequena);
 }
 
 .whyusbutton{
@@ -374,10 +390,10 @@ header h1{
 #segmentos{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: var(--segmentosHeight);
     background-color: white;
     float: left;
-    margin-top: 50%;
+    margin-top: 55%;
     overflow: hidden;
 }
 
@@ -432,7 +448,7 @@ header h1{
     position: relative;
     border-radius: 15px;
     transition: 1s;
-    font-size: 12px;
+    font-size: var(--fontMINI);
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -552,7 +568,7 @@ header h1{
     border-radius: 15px;
     margin-left: 8%;
     margin-bottom: 3%;
-    font-size: 10px;
+    font-size: var(--fontMINI);
     text-align: center;
 }
 
@@ -584,7 +600,7 @@ header h1{
 #produtos{
     position: relative;
     width: 100%;
-    height: 400%;
+    height: var(--produtosHeight);
     background-color: white;
     float: left;
     margin-bottom: 2%;
@@ -629,7 +645,7 @@ header h1{
     margin-left: 4%;
     float: left;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: var(--fontMINI);
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
@@ -702,7 +718,7 @@ header h1{
     width: 60%;
     height: 14%;
     background-color: white;
-    font-size: 30px;
+    font-size: var(--fontMedia);
 }
 
 
@@ -735,7 +751,7 @@ header h1{
     width: 60%;
     left: 15%;
     background-color: transparent;
-    font-size: 25px;
+    font-size: var(--fontMinuscula);
 }
 
 /*SUPORTE*/
@@ -750,10 +766,11 @@ header h1{
 #suporte{
     position: relative;
     width: 100%;
-    height: 50%;
+    height: var(--suportHeight);
     background-color: white;
     float: left;
     margin-bottom: 8%;
+    margin-top: 10%;
 }
 
 .suporte-title-section{
@@ -793,7 +810,7 @@ header h1{
     height: 100%;
     float: right;
     overflow: visible;
-    font-size: 30px;
+    font-size: var(--fontMedia);
 }
 
 .incolor{
@@ -809,6 +826,7 @@ header h1{
     height: 70%;
     background-color: white;  
     text-align: left;
+    
 }
 
 #atendimento-presencial h1{
@@ -818,6 +836,7 @@ header h1{
     float: left;
     color: #F59D0F;
     margin-top: 10%;
+    font-size: var(--fontMedia);
 }
 
 #atendimento-remoto h1{
@@ -827,6 +846,7 @@ header h1{
     float: left;
     color: #F59D0F;
     margin-top: 10%;
+    font-size: var(--fontMedia);
 }
 
 #atendimento-presencial p{
@@ -836,6 +856,7 @@ header h1{
     float: left;
     margin: 0;
     padding: 0;
+    font-size: var(--fontMinuscula);
 }
 
 #atendimento-remoto p{
@@ -845,7 +866,7 @@ header h1{
     float: left;
     margin: 0;
     padding: 0;
-
+    font-size: var(--fontMinuscula);
 }
 
 #atendimento-presencial h2{
@@ -856,6 +877,7 @@ header h1{
     margin: 0;
     padding: 0;
     margin-bottom: 5%;
+    font-size: var(--fontPequena);
 }
 
 #atendimento-remoto h2{
@@ -866,6 +888,7 @@ header h1{
     margin: 0;
     padding: 0;
     margin-bottom: 5%;
+    font-size: var(--fontPequena);
 }
 
 #atencao-suporte{
@@ -883,7 +906,7 @@ header h1{
     left: 10%;
     top: 50%;
     transform: translateY(-100%);
-    font-size: 20px;
+    font-size: var(--fontMinuscula);
     color: #666666;
 }
 
@@ -899,7 +922,7 @@ footer{
 footer{
     position: relative;
     width: 100%;
-    height: 40%;
+    height: var(--footerHeight);
     background-color: #012333;
     float: left;
     margin-top: 10%;
@@ -943,7 +966,7 @@ footer{
     padding: 0%;
     top: 50%;
     transform: translateY(-70%);
-    font-size: 20px;
+    font-size: var(--fontMinuscula);
 }
 
 
@@ -960,7 +983,7 @@ footer{
 #nav-footer h1{
     position: relative;
     left: 10%;
-    font-size: 25px;
+    font-size: var(--fontPequena);
     margin: 3% 0% 2% 0% ;
     padding: 0;
 }
@@ -976,6 +999,7 @@ footer{
 
 #nav-footer li{
     margin: 1% 0%   1% 0%;
+    font-size: var(--fontMinuscula);
 }
 
 
@@ -989,7 +1013,7 @@ footer{
 }
 
 #atendimento-footer h1{
-    font-size: 25px;
+    font-size: var(--fontPequena);
     margin: 2% 0% 2% 0% ;
     padding: 0;
 }
@@ -1002,6 +1026,7 @@ footer{
 
 #atendimento-footer li{
     margin: 2% 0%   2% 0%;
+    font-size: var(--fontMinuscula);
 }
 
 

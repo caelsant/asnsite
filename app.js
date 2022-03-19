@@ -11,8 +11,4 @@ app.get("/index", function(req, res){
 
 
 
-app.listen(9090, function(){
-    console.log("http://localhost:9090");
-    console.log("Alterado")
-    
-});
+app.listen(2003);

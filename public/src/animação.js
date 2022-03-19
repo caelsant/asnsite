@@ -14,31 +14,29 @@ function animeSobre(){
         });
     }else{
         aSobre.forEach(element => {
-            element.classList.remove(animateClass);
+
         });
     }
 }
 
 function animeUs(){
-    const windowTop = window.pageYOffset + -1200;
+    const windowTop = window.pageYOffset + -800;
     aUs.forEach(element => {
         if((windowTop) > element.offsetTop){
             element.classList.add(animateClass);
         }else{
-            element.classList.remove(animateClass);
         }
     });
 }
 
 function animeNf(){
-    const windowTop = window.pageYOffset + -3600;
+    const windowTop = window.pageYOffset + -3000;
     aNf.forEach(element => {
         if((windowTop) > element.offsetTop){
             //console.log("Entrou " + windowTop + " | icon: " + element.offsetTop)
             element.classList.add(animateClass);
         }else{
             //console.log("saiu")
-            element.classList.remove(animateClass);
         }
 
     });
