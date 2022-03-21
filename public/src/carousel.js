@@ -46,7 +46,6 @@ function animar(){
     
     slider.style.transition = "transform 1s ease-in-out";
     slider.style.transform = "translateX(" + (-size * posicao) + "px)";
-    console.log(posicao)
 
     if(posicao == 0){
         todosRadios[0].checked ="true";

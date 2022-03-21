@@ -4,15 +4,15 @@
     --fontH1-Home: 20px;
     --colorPrincipal: #F59D0F;
     --colorSecundaria: #015A84;
-    --fontSections: 1.3em;
+    --fontSections: 2.8em;
 
     /*Alturas*/
-    --fontGrande: 2.3em;
-    --fontMGrande: 1.7em;
-    --fontMedia: 1.5em;
-    --fontPequena: 1.0em;
-    --fontMinuscula: 0.8em;
-    --fontMINI: 0.5em;
+    --fontGrande: 3.2em;
+    --fontMGrande:2.3em;
+    --fontMedia: 2.0em;
+    --fontPequena: 1.5em;
+    --fontMinuscula: 1.2em;
+    --fontMINI: 0.7em;
 
     /*HEIGHTS*/
     --homeHeight: 240%;
@@ -21,6 +21,16 @@
     --segmentosHeight: 100%;
     --suportHeight: 70%;
     --footerHeight: 40%;
+    --headerHeight: 10%;
+    --containerHeight: 90%;
+    --containerTop: 10%;
+
+    /*especificos*/
+    --segmentosMargin: 55%;
+    --suportMargin: 10%;
+    --alanPositionT: -20%;
+    --alanPositionW: 70%;
+    --imgSobre: 0%;
 }
 
 
@@ -42,6 +52,7 @@ body{
     margin: 0;
     font-family: "Roboto";
     overflow-x: hidden;
+    display: block;
 }
 
 /*CABECALHO*/
@@ -49,7 +60,7 @@ body{
 header{
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: var(--headerHeight);
     background-color: #F59D0F;
     margin: 0;
     padding: 0;
@@ -139,11 +150,13 @@ header h1{
 
 #container_geral{
     width: 100%;
-    height: 90%;
-    top: 10%;
+    height: var(--containerHeight);
+    top: var(--containerTop);
     position: absolute;
     display: block;
     margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #container_geral::-webkit-scrollbar{
@@ -190,8 +203,8 @@ header h1{
 #home-pic img{
     position: relative;
     top: 50%;
-    transform: translateY(-60%);
-    width: 60%;
+    transform: translateY(-55%);
+    width: 110%;
     left: 6%;
 }
 
@@ -269,8 +282,8 @@ header h1{
 
 #sobre-pic img{
     position: relative;
-    top: -20%;
-    width: 70%;
+    top: var(--alanPositionT);
+    width: var(--alanPositionW);
     float: right;
 }
 
@@ -369,7 +382,7 @@ header h1{
 
 .whyusimg{
    position: relative;
-   top: -50%;
+   top: var(--imgSobre);
    width: 90%; 
    margin: 0;
    padding: 0;
@@ -393,7 +406,7 @@ header h1{
     height: var(--segmentosHeight);
     background-color: white;
     float: left;
-    margin-top: 55%;
+    margin-top: var(--segmentosMargin);
     overflow: hidden;
 }
 
@@ -464,7 +477,7 @@ header h1{
 }
 
 .segmentos-items:hover .segmentos-items-icon img{
-    width: 80%;
+    width: 110%;
     left: 10%;
 }
 
@@ -488,9 +501,9 @@ header h1{
 
 .segmentos-items-icon img{
     position: relative;
-    width: 60%;
-    left: 20%;
-    height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
     transition: 1s;
 }
 
@@ -518,7 +531,7 @@ header h1{
     float: left;
     width: 100%;
     height: 15%;
-    background-color:green;
+    background-color:var(--colorPrincipal);
 }
 
 #sgi-carousel-action{
@@ -718,7 +731,7 @@ header h1{
     width: 60%;
     height: 14%;
     background-color: white;
-    font-size: var(--fontMedia);
+    font-size: var(--fontPequena);
 }
 
 
@@ -727,9 +740,21 @@ header h1{
     top: 10%;
     width: 80%;
     height: 80%;
-    left: 10%;
+    left: 0%;
     background-color: #F59D0F;
     border-radius: 30px;
+    text-align: center;
+}
+
+.fiscais-pic-container-esquerda{
+    position: relative;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    left: 20%;
+    background-color: #F59D0F;
+    border-radius: 30px;
+    text-align: center;
 }
 
 
@@ -742,7 +767,7 @@ header h1{
     width: 60%;
     background-color: transparent;
     margin-bottom: 5%;
-
+    color: var(--colorSecundaria);
 }
 
 .fiscais-item-info p{
@@ -752,6 +777,20 @@ header h1{
     left: 15%;
     background-color: transparent;
     font-size: var(--fontMinuscula);
+}
+
+.fiscais-pic-container img{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fiscais-pic-container-esquerda img{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*SUPORTE*/
@@ -770,7 +809,7 @@ header h1{
     background-color: white;
     float: left;
     margin-bottom: 8%;
-    margin-top: 10%;
+    margin-top: var(--suportMargin);
 }
 
 .suporte-title-section{
